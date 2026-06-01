@@ -1,0 +1,274 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    /* margin: 0 50px 0 50px; */
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    overflow: hidden;
+}
+
+main{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(253, 238, 210, 0.236);
+    display: flex;
+   
+}
+/* //////////////////////////////////////////// */
+main aside{
+    width: 20%;
+    height: 100vh;
+    border-right: 1px solid #00000015;
+    background-color: rgb(204, 33, 87);
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+main aside .logo{
+    overflow: hidden;
+    width: 100%;
+    height: 15%;
+    border-radius: 5px;
+}
+
+main aside .logo img{
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+
+main aside .Text{
+    width: 100%;
+    height: auto;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #ffffff34;
+
+}
+
+main aside .Text h1{
+    font-size: 30px;
+    font-weight: 500;
+    color: #fff;
+    text-align: center;
+}
+
+
+main aside ul{
+    margin-top: 30px;
+    display: inline-block;
+    width: 100%;
+    height: 80%;
+    /* background-color: silver; */
+    padding: 5px;
+    border-bottom: 2px solid #ffffff2b;
+    
+}
+
+main aside ul li{
+    /* border-bottom: 1px solid #ffffff3e; */
+    position: relative;
+    list-style: none;
+    position: relative;
+    margin-bottom: 10px;
+    padding: 5px 10px;
+    border-radius: 1px;
+    transition: all .2s ease-in;
+}
+
+
+main aside ul li:hover{
+    background-color: #2b1b1b16;
+   
+    
+}
+
+
+main aside ul li::before{
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+    border-radius: 10px;
+    content: "";
+    width: 10%;
+    height: 4px;
+    background-color: #ffffff28;
+     transition: all .3s ease-in;
+
+}
+
+main aside ul li:hover:before{
+    width: 85%;
+}
+
+main aside ul li a{
+    width: 180px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 300;
+    padding: 10px;
+    color: #fff;
+    transition: .4s ease-in;
+    
+}
+
+
+
+main aside .box_exit{
+    position: relative;
+    top: 5.5em;
+    width: 50%;
+    height: 40px;
+    padding: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 5px;
+    
+}
+
+main aside .box_exit span{
+    color: #ffffffa3;
+}
+
+main aside .box_exit .exit_btn{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    /* background-color: rgba(103, 103, 103, 0.295); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main aside .box_exit .exit_btn img{
+    width: 40px;
+    height: 40px;
+  
+}
+
+/* //////////////////////////////// */
+
+
+main .chamados{
+    margin: 25px auto;
+    max-width: 55.5rem;
+    height: 90%;
+    /* background-color: #fff;
+    border: 1px solid #00000015;
+    box-shadow: 5px 4px 3px 0 rgba(103, 103, 103, 0.1); */
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+main .chamados .chamado_top{
+    width: 100%;
+    height: 30%;
+    border: 1px solid #cdcdcd3d;
+    background-color: rgba(253, 238, 210, 0.702);
+    box-shadow: 4px 4px 3px rgba(103, 103, 103, 0.1);
+    padding: 15px 60px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+main .chamados .chamado_bottom{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+main .chamados .chamado_bottom .content{
+    width: 50%;
+    height: 100%;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 60px;
+
+}
+
+main .chamados .chamado_bottom .content .icone{
+    width: 90px;
+    height: 90px;
+    border: 1px solid #fff;
+}
+
+main .chamados .chamado_bottom .content .description{
+    width: 100%;
+    height: 30vh;
+    margin-top: 5px;
+    
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+main .chamados .chamado_bottom .content .description .text_call{
+    width: 90%;
+    height: 20vh;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+main .chamados .chamado_bottom .content .description h1{
+    color: #fff;
+}
+main .chamados .chamado_bottom .content .description p{
+    font-size: 14px;
+    color: #fff;
+    font-weight: bold;
+    position: relative;
+    top: 2rem;
+}
+main .chamados .chamado_bottom .content .description .btn{
+    position: relative;
+    top: 4rem;
+    width: auto;
+    padding: 10px 20px;
+    border-radius: 30px;
+    background-color: #fff;
+    box-shadow: 5px 3px 2px rgba(63, 63, 63, 0.146);
+    text-decoration: none;
+    font-weight: bold;
+    transition: .3s ease-in;
+}
+
+main .chamados .chamado_bottom .content .description .btn:hover{
+    background-color: rgba(232, 232, 232, 0.455);
+    color: #fff;
+    
+}
+
+main .chamados .chamado_bottom .content .description .btn_open_call{
+    color: rgb(204, 33, 87);
+}
+
+main .chamados .chamado_bottom .content .description .btn_view_call{
+    color: rgba(4, 168, 4, 0.729);
+}
+
+
+main .chamados .chamado_bottom .content_left{
+    background-color: rgb(204, 33, 87);
+}
+
+main .chamados .chamado_bottom .content_right{
+    background-color: rgba(4, 168, 4, 0.729);
+}

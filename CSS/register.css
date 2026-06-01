@@ -1,0 +1,162 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form{
+    padding: 10px;
+    min-width: 30%;
+    height: 90vh;
+    border: 1px solid #0000001b;
+    border-radius: 10px;
+    box-shadow: 5px 3px 2px 2px rgba(182, 181, 181, 0.12);
+}
+
+form .logo_register{
+    width: 100%;
+    height: 25vh;
+    margin-bottom: .5rem;
+    flex-direction: column;
+    display: flex;
+    justify-content: space-between;
+}
+
+form .logo_register .exit_icon{
+    width: 30px;
+    height: 20px;
+    position: relative;
+    margin-left: 21rem;
+    display: flex;
+    justify-content: center;
+}
+
+form .logo_register .logo_image{
+    width: 100%;
+    height: 90%;
+    /* background-color: silver; */
+}
+
+form .logo_register .logo_image img{
+    width: 100%;
+    max-height: 120px;
+    margin-top: 2px;
+    background-size: contain;
+    background-position: center;
+}
+
+
+form .data_register{
+    position: relative;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 10px;
+    /* border: 1px solid #000; */
+    min-height: 50vh;
+}
+
+form .data_register .data_box{
+    height: auto;
+    margin-bottom: .2rem;
+    padding-bottom: 3px;
+    /* border: 1px solid orange; */
+    display: flex;
+    flex-direction: column;
+}
+
+form .data_register .data_box label{
+    font-weight: 600;
+    margin-bottom: .2rem;
+}
+
+form .data_register .data_box input{
+    padding: 5px;
+}
+
+form .register_log{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    text-decoration: none;
+    background-color: rgb(11, 68, 240);
+    color: #fff;
+    border-radius: 10px;
+}
+
+form .alternative{
+    /* border: 1px solid orange; */
+    height: auto;
+}
+
+form .alternative .alternative_top{
+    display: flex;
+    margin: 10px auto;
+    justify-content: center;
+    gap: 10px;
+}
+
+form .alternative .alternative_top a{
+    text-decoration: none;
+    font-weight: 600;
+    color: rgb(25, 78, 238);
+}
+
+form .alternative .alternative_middle{
+    display: flex;
+    margin-top: 10px;
+    justify-content: center;
+    position: relative;
+}
+
+form .alternative .alternative_middle span{
+    color: rgb(110, 109, 109);
+}
+
+form .alternative .alternative_middle::before, form .alternative .alternative_middle::after{
+    content: "";
+    width: 20%;
+    height: 2px;
+    background-color: #cac2c2;
+    position: absolute;
+    top: 7px;
+}
+
+form .alternative .alternative_middle::before{
+    left: 60px;
+}
+
+form .alternative .alternative_middle::after{
+    right: 60px;
+}
+
+form .alternative .alternative_bottom{
+    display: flex;
+    margin-top: 10px;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    border: 2px solid rgb(202, 229, 251);
+    border-radius: 5px;
+    padding: 5px;
+}
+
+form .alternative .alternative_bottom .logo_box{
+    min-width: 50px;
+    min-height: 40px;
+    border: 1px solid #000;    
+}
+
+form .alternative .alternative_bottom a{
+    text-decoration: none;
+    color: rgba(27, 27, 27, 0.728);
+}

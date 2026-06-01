@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="CSS/new_call.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main>
+      <aside>
+        <div class="logo">
+            <img src="img/Screenshot 2026-02-23 132916.png" alt="">
+        </div>
+        <div class="Text">
+          <h1>Tópicos</h1>
+        </div>
+
+        <div class="box_list">
+          <ul>
+            <li><a href="">Tópico_1</a></li>
+            <li><a href="">Tópico_2</a></li>
+            <li><a href="">Tópico_3</a></li>
+            <li><a href="">Tópico_4</a></li>
+            <li><a href="">Tópico_5</a></li>
+            <li><a href="">Tópico_6</a></li>
+          </ul>
+
+          <div class="box_exit">
+            <a href="call_page.html" class="exit_btn">
+              <img src="" alt="" />
+              <span>voltar</span>
+            </a>
+            
+          </div>
+        </div>
+      </aside>
+      <!-- //////////////////////////////////// -->
+
+      <section class="open_call">
+        <div class="call_box first_box">
+            <div class="box_content">
+                <h2>Abrir um novo chamado</h2>
+                <p>Preencha os campos a seguir para abrir um chamado</p>
+            </div>
+          
+          <div class="icon_closeWindow">X</div>
+        </div>
+        <!-- ------------------second_box----------------- -->
+        <div class="call_box second_box">
+          <div class="sub_box">
+            <h4>Título</h4>
+            <input type="text" placeholder="Insira o título do chamado" />
+          </div>
+          
+          <div class="sub_box2">
+            <h4>Departamento</h4>
+            <select title="Selecione um departamento" aria-label="Departamento">
+              <option value="">a</option>
+              <option value="">b</option>
+              <option value="">c</option>
+              <option value="">d</option>
+            </select>
+          </div>
+        </div>
+        <!-- ------------------third_box----------------- -->
+        <div class="call_box third_box">
+          <h4>Descrição</h4>
+          <input type="text" placeholder="Descreva o seu problema"/>
+        </div>
+        <!-- ------------------fourth_box----------------- -->
+        <div class=" fourth_box">
+         
+          <div class="upload-card">
+            <div class="card-header">
+              <h2>Anexar Documentos</h2>
+              <p>Adicione imagens (JPG, PNG) ou arquivos PDF — cada arquivo até 5MB</p>
+            </div>
+
+            <div class="card-body">
+              <!-- zona de upload (drag & drop + click) -->
+              <div id="dropZone" class="drop-zone">
+                <h3>Arraste e solte seus arquivos</h3>
+                <p>ou clique para selecionar</p>
+                <label for="fileInput" class="file-input-label">Escolher arquivo(s)</label>
+                <input type="file" id="fileInput" multiple accept=".jpg,.jpeg,.png,.pdf,image/jpeg,image/png,application/pdf"/>
+                
+                <div class="limits-info">
+                  <span>Formatos: JPG, PNG, PDF</span>
+                  <span>Máx. 5 MB por arquivo</span>
+                </div>
+
+              </div>
+
+              <!-- seção de anexos listados -->
+              <!-- <div class="attachments-section">
+                <div class="section-title">
+                  <h3>Anexos adicionados</h3>
+                  <button id="clearAllBtn" class="clear-btn" title="Remover todos os anexos">🗑 Limpar todos</button>
+                </div> -->
+
+                <!-- <div id="fileListContainer" class="file-list">
+                    <div class="empty-message">Nenhum arquivo anexado ainda.<br/>Adicione JPG, PNG ou PDF (máx 5MB).</div>
+                </div>
+              </div> -->
+
+              <div id="globalMessage" class="warning-message" style="display: none"></div>
+             
+            </div>
+          </div>
+
+        </div>
+            <div class="buttons">
+                <a class="cancel" href="call_page.html">Cancelar</a>
+                <a class="send_call" href="">Enviar chamado</a>
+            </div>
+      </section>
+    </main>
+
+  </body>
+</html>
