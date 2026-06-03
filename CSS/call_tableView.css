@@ -1,0 +1,580 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    /* height: 85.5vh; */
+    /* margin: 0 50px 0 50px; */
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    /* overflow: hidden; */
+}
+
+main{
+    width: 100%;
+    height: 90vh;
+    background-color: rgba(253, 238, 210, 0.236);
+    display: flex;
+}
+
+header{
+    padding: 7px;
+    width: 80%;
+    height: 10vh;
+    background-color: rgb(204, 33, 87);
+    position: relative;
+    top: 0;
+    left: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+header .data_search{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid#000; */
+}
+
+header .data_search .data_input{
+    width: 40%;
+    background-color: silver;
+    border-radius: 20px;
+    display: flex;
+
+}
+
+header .data_search .data_input input{
+    width: 85%;
+    padding: 10px;
+    border-radius: 20px 0 0 20px;
+    border: none;
+    outline: none;
+}
+
+
+header .data_search .data_input .search_btn{
+    width: 25%;
+    background-color: #fff;
+    border-radius: 0 20px 20px 0;
+}
+
+header .data_search .data_input .search_btn button{
+    width: 100%;
+    height: 100%;
+    border-radius: 0 20px 20px 0;
+    border: none;
+    outline: none;
+}
+
+/* //////////////////////////////////////////// */
+header .data_search .user_info{    
+    width: 25%;
+    height: 90%;
+    transform: translateX(40%);
+    display: flex;
+    /* padding: 5px 15px; */
+}
+
+
+header .data_search .user_info .notification{
+    background-color: #fff;
+    min-width: 2.5rem;
+    min-height: 100%;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow:  5px 2px 2px rgba(57, 57, 57, 0.104);
+}
+
+header .data_search .user_info .notification .number_notification{
+    background-color: white;
+    border: 2px solid #808080;
+    min-width: 1.5rem;
+    max-height: 25px;
+    padding: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+
+    position: absolute;
+    top: 20px;
+    left: 25px;
+}
+
+header .data_search .user_info .notification .number_notification span{
+    font-size: 12px;
+}
+
+
+header .data_search .user_info .user_perfil{
+    margin-left: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    background-color: #ffffff1d;
+    border-radius: 20px;
+   
+}
+
+header .data_search .user_info .user_perfil .username{
+    width: 80%;
+}
+
+header .data_search .user_info .user_perfil .username span{
+    font-size: 12px;
+    padding-left: 10px;
+}
+
+/* //////////////////////////////////////////// */
+header .data_search .user_info .user_perfil .user_image{
+    min-width: 2.5rem;
+    border: 2px solid #3070b155;
+    height: 100%;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* //////////////////////////////////////////// */
+header .burguer_menu{
+    width: 40px;
+    margin-right: 10px;
+    height: 30px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .burguer_menu span{
+    width: 100%;
+    height: 4px;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 2px 2px 1px rgba(57, 57, 57, 0.104);
+}
+
+
+
+/* //////////////////////////////////////////// */
+main aside{
+    width: 20%;
+    height: 100%;
+    border-right: 1px solid #00000015;
+    background-color: rgb(204, 33, 87);
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+}
+
+
+
+/* //////////////////////////////////////////// */
+
+
+main aside .logo{
+    overflow: hidden;
+    width: 100%;
+    height: 15%;
+    border-radius: 5px;
+}
+
+main aside .logo img{
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+main aside .Text{
+    width: 100%;
+    height: auto;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #ffffff34;
+
+}
+
+main aside .Text h1{
+    font-size: 30px;
+    font-weight: 500;
+    color: #fff;
+    text-align: center;
+}
+
+
+main aside ul{
+    margin-top: 30px;
+    display: inline-block;
+    width: 100%;
+    height: 80%;
+    /* background-color: silver; */
+    padding: 5px;
+    border-bottom: 2px solid #ffffff2b;
+    
+}
+
+main aside ul li{
+    /* border-bottom: 1px solid #ffffff3e; */
+    position: relative;
+    list-style: none;
+    position: relative;
+    margin-bottom: 10px;
+    padding: 5px 10px;
+    border-radius: 1px;
+    transition: all .2s ease-in;
+}
+
+
+main aside ul li:hover{
+    background-color: #2b1b1b16;
+    
+}
+
+
+main aside ul li::before{
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+    border-radius: 10px;
+    content: "";
+    width: 10%;
+    height: 4px;
+    background-color: #ffffff28;
+    transition: all .3s ease-in;
+
+}
+
+main aside ul li:hover:before{
+    width: 85%;
+}
+
+main aside ul li a{
+    width: 180px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 300;
+    padding: 10px;
+    color: #fff;
+    transition: .4s ease-in;
+    
+}
+
+main aside .box_exit{
+    position: relative;
+    top: 5.5em;
+    width: 50%;
+    height: 40px;
+    padding: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 5px;
+    
+}
+
+main aside .box_exit span{
+    color: #ffffffa3;
+}
+
+main aside .box_exit .exit_btn{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    /* background-color: rgba(103, 103, 103, 0.295); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main aside .box_exit .exit_btn img{
+    width: 40px;
+    height: 40px;
+  
+}
+
+main form{
+    width: 60%;
+    height: 80vh;
+    background-color: #fff;
+    box-shadow: 5px 3px 2px rgba(253, 238, 210, 0.236);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    position: absolute;
+    top: 5.5rem;
+    left: 25rem;
+    border: 1px solid #000;
+    margin: auto;
+}
+
+main form .table{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 10vh;
+    
+}
+
+main form .table .title_box{
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+main form .table .title_box h3{
+    font-size: 1.2rem;
+}
+
+main form .table .title_box .exit_button{
+    width: 40px;
+    height: 40px;
+    border: 5px solid orange;
+    
+}
+
+main form .table .exit_button img{
+    width: 20px;
+    height: 20px;
+}
+
+main form .boxs_input{
+    width: 100%;
+    height: auto;
+        
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+main form .boxs_input .bx{
+    width: 50%;
+    height: 100%;
+
+}
+
+main form .boxs_input .bx:first-child{
+    margin-top: 48px;
+}
+
+main form .boxs_input .box_input1 .title span{
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+main form .boxs_input .box_input1 .box_search{
+    max-width: 80%;
+    border: 1px solid #000;
+    border-radius: 5px;
+    display: flex;
+}
+
+main form .boxs_input .box_input1 .box_search input{
+    padding: .5rem;
+    border-radius: 5px 0 0px 5px;
+    border: none;
+    outline: none;
+    width: 90%;
+    height: 1.5rem;
+    
+}
+
+main form .boxs_input .box_input1 .box_search .icon1{
+    background-color: #fff;
+    width: 10%;
+    border-radius: 0px 5px 5px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main form .box_input2{
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+main form .box_input2 .title span{
+    font-weight: 600;
+    display: flex;
+    justify-content: end;
+    margin-right: 10px;
+}
+
+main form .box_input2 .box_select{
+    display: flex;
+    width: 50%;
+    border: 1px solid #000;
+    border-radius: 5px;
+    align-self: flex-end;
+}
+
+main form .box_input2 .box_select select{
+    width: 100%;
+    padding: .2rem;
+    outline: none;
+    
+}
+
+
+
+/* /////////////// tabela ///////////////  */
+
+main form .table_info{
+    width: 100%;
+    height: 90%;
+    
+    margin-top: 20px;
+}
+
+
+table, tr, th, td{
+    border: 1px solid #53535344;
+    border-collapse: collapse;
+    padding: 10px;
+    border-top: none;
+    font-size: 12px;
+    margin-left: 20px;
+}
+
+th:first-child{
+    width: 20rem;
+}
+
+th:nth-child(2){
+    width: 8rem;
+}
+
+th:nth-child(2){
+    width: 9.6rem;
+}
+
+th:last-child{
+    width: 6.1rem;
+}
+
+main .sidebar{
+    position: absolute;
+    right: 0;
+    top: 60px;
+    width: 25%;
+    height: 90vh;
+    background-color: #fff;
+    border-left: 1px solid #28272718;
+}
+
+main .sidebar .user_image_perfil{
+    width: 250px;
+    height: 170px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #00000021;
+    padding-bottom: 5px;
+}
+
+main .sidebar .user_image_perfil .perfil{
+    border: 2px solid #000;
+    width: 100px;
+    height: 130px;
+    margin: 10px auto;
+    border-radius: 100px;
+
+}
+
+main .sidebar .user_image_perfil .perfil_info{
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #0000000b;
+}
+
+
+main .sidebar .user_image_perfil .perfil_info .username span{
+    font-size: 14px;
+}
+
+main .sidebar .user_image_perfil .perfil_info .department{
+    background-color: orange;
+    padding: 10px;
+    margin-left: 5px;
+
+}
+
+main .sidebar .content_option{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: 40vh;
+    margin: auto;
+}
+
+main .sidebar .content_option .op{
+    width: 100%;
+    height: 10vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 20px;
+    border-bottom: 1px solid #96959533;
+}
+
+main .sidebar .content_option .op .icons{
+    width: 30px;
+    height: 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main .sidebar .content_option .op .icons img{
+    max-width: 30px;
+    max-height: 30px;
+}
+
+main .sidebar .content_option .op .description{
+    width: 150px;
+    height: 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main .sidebar .content_option .op .description h5{
+    font-size: 12px;
+    font-weight: 500;
+}
+
+main .sidebar .content_option .op .arrow_icon{
+    width: 30px;
+    height: 30px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main .sidebar .content_option .op .arrow_icon img{
+    max-width: 30px;
+    max-height: 30px;
+}
